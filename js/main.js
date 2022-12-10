@@ -14,6 +14,13 @@
         $("#btn_test").click(function () {
             csInterface.evalScript('sayHello()');
         });
+    
+            
+        themeManager.init();
+                
+        $("#btn_test2").click(function () {
+            csInterface.evalScript('createLayers()');
+        });
     }
         
     init();

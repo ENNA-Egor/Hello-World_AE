@@ -3,5 +3,14 @@
 
 
 function sayHello(){
-    alert("hello from ExtendScript");
+    alert("hello from ExtendScript in After Effects");
+}
+
+function createLayers(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addNull();
+     newLayer.name = ("Proba");
 }

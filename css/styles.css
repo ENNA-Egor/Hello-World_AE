@@ -14,8 +14,20 @@
 
 
 #btn_test{
-    width: 100%;
+    width: 150 px;
+    color: bisque;
+    background-color: blue;
+    margin-left:10px;
 }
+
+#btn_test2{
+    width: 150 px;
+    color: bisque;
+    background-color: blue;
+    margin-left:10px;
+    margin-top:5px;
+}
+
 
 
 
