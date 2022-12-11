@@ -22,6 +22,6 @@ function countLayers(){
     return
     };
     var countLayers = Comp.layers.length
-    alert("hello count Layers ="+ countLayers);
+   // alert("hello count Layers ="+ countLayers);
     return ("Открыто "+ countLayers + "   слоёв");
 }
