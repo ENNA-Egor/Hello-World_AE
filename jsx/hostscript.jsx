@@ -25,3 +25,7 @@ function countLayers(){
    // alert("hello count Layers ="+ countLayers);
     return ("Открыто "+ countLayers + "   слоёв");
 }
+
+function Proba(dataN){
+    alert ("Всё меняется" + dataN);
+}

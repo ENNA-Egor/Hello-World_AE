@@ -6,7 +6,12 @@
 
     var csInterface = new CSInterface();
     
-    
+    document.querySelector ('.TypeL').addEventListener('click', function(){
+      let data = document.querySelector('.TypeL').value;
+      document.querySelector('.selectedType').innerHTML = data;
+        // csInterface.evalScript('Proba(data)')
+    })
+
     function init() {
                 
         themeManager.init();
@@ -28,6 +33,8 @@
                 document.getElementById("countLayers").innerHTML= result;
             });
         });
+
+        
     }
     
         

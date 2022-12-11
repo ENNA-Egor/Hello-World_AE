@@ -1,7 +1,7 @@
 /*Your styles*/
 
  body {
-    margin: 10px;
+    margin:10px;
 }
 
 
@@ -14,33 +14,48 @@
 
 
 #btn_test{
-    width: 150 px;
+    width:150px;
     color: bisque;
     background-color: blue;
     margin-left:10px;
+    border-radius: 10px;
 }
 
 #btn_test2{
-    width: 150 px;
+    width:150px;
     color: bisque;
     background-color: blue;
     margin-left:10px;
     margin-top:5px;
+    border-radius: 5px;
 }
 
 #btn_test3{
-    width: 150 px;
+    width:150px;
     color: bisque;
     background-color: blue;
     margin-left:10px;
     margin-top:5px;
+    border-radius: 3px;
 }
 
 #countLayers{
-    margin-left:10px;
+    margin-left:5px;
     color: bisque;
+    width:150px;
+}
+.selectedType{
+    margin-left:5px;
+    color: bisque;
+    width:150px;
 }
 
+.TypeL {
+    width:150px;
+    background-color: blue;
+    color: bisque;
+    margin: 5px;
+}
 
 
 
