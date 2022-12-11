@@ -14,3 +14,14 @@ function createLayers(){
      var newLayer = Comp.layers.addNull();
      newLayer.name = ("Proba");
 }
+
+
+function countLayers(){
+    var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+    var countLayers = Comp.layers.length
+    alert("hello count Layers ="+ countLayers);
+    return ("Открыто "+ countLayers + "   слоёв");
+}

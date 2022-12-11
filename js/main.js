@@ -21,7 +21,15 @@
         $("#btn_test2").click(function () {
             csInterface.evalScript('createLayers()');
         });
+        themeManager.init();
+                
+        $("#btn_test3").click(function () {
+            csInterface.evalScript('countLayers()', function(result){
+                document.getElementById("countLayers").innerHTML= result;
+            });
+        });
     }
+    
         
     init();
 
