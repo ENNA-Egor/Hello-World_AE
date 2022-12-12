@@ -26,6 +26,6 @@ function countLayers(){
     return ("Открыто "+ countLayers + "   слоёв");
 }
 
-function Proba(dataN){
+function selectType(dataN){
     alert ("Всё меняется" + dataN);
 }
