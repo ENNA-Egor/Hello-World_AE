@@ -9,7 +9,7 @@
     document.querySelector ('.TypeL').addEventListener('click', function(){
       let data = document.querySelector('.TypeL').value;
       document.querySelector('.selectedType').innerHTML = data;
-        // csInterface.evalScript('Proba(data)')
+        // csInterface.evalScript('selectType(data)')
     })
 
     function init() {
