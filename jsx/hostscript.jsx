@@ -27,5 +27,6 @@ function countLayers(){
 }
 
 function selectType(dataN){
-    alert ("Всё меняется" + dataN);
+    var sel = dataN;
+    alert ("Всё меняется" + sel);
 }
