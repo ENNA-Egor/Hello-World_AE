@@ -6,11 +6,13 @@
 
     var csInterface = new CSInterface();
     
-    document.querySelector ('.TypeL').addEventListener('click', function(){
+    document.querySelector ('.TypeL').addEventListener('change', function(){
       let data = document.querySelector('.TypeL').value;
-      document.querySelector('.selectedType').innerHTML = data;
-        // csInterface.evalScript('selectType(data)')
-    })
+      //let a = 5;
+         csInterface.evalScript('selType("'+data+'")');
+         document.querySelector('.selectedType').innerHTML = data;
+    //  console.log(data);
+    });
 
     function init() {
                 

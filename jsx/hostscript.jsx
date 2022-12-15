@@ -26,7 +26,31 @@ function countLayers(){
     return ("Открыто "+ countLayers + "   слоёв");
 }
 
-function selectType(dataN){
+function selType(dataN){
+    alert ("Выбрано  " + dataN);
     var sel = dataN;
-    alert ("Всё меняется" + sel);
+    switch (sel) {
+        case "Shape":
+          alert ("Создаём шейп");  
+            break;
+            case "Null":
+          alert ("Создаём нулевой слой");  
+            break;
+            case "Text":
+          alert ("Создаём текстовый слой");  
+            break;
+            case "Solid":
+          alert ("Создаём слой со сплошной заливкой");  
+            break;
+            case "Camera":
+          alert ("Создаём камеру");  
+            break;
+            case "Ajustment":
+          alert ("Создаём корректирующий слой");  
+            break;
+    
+     //   default:
+       //     break;
+    }
+    
 }
