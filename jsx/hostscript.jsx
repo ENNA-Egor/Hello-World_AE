@@ -48,9 +48,59 @@ function selType(dataN){
             case "Ajustment":
           alert ("Создаём корректирующий слой");  
             break;
-    
-     //   default:
-       //     break;
-    }
-    
+    }  
+}
+
+function createNull(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addNull();
+     newLayer.name = ("Proba");
+}
+
+function createShape(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addShape();
+     newLayer.name = ("Proba");
+}
+
+function createText(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addText("ProbaText");
+     newLayer.name = ("Proba");
+}
+
+function createSolid(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addSolid([1,1,1],"ProbaS",1920,1080,1);
+     
+}
+
+function createCamera(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addCamera("ProbaCamera",[comp.width/2, comp.height/2]);
+     newLayer.name = ("Proba");
+}
+
+function createAjustment(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addAdjustment();
+     newLayer.name = ("Proba");
 }
