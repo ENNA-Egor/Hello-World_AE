@@ -31,22 +31,24 @@ function selType(dataN){
     var sel = dataN;
     switch (sel) {
         case "Shape":
-          alert ("Создаём шейп");  
+          alert ("Создаём шейп"); 
+          createShape(); 
             break;
             case "Null":
-          alert ("Создаём нулевой слой");  
+          alert ("Создаём нулевой слой"); 
+          createNull(); 
             break;
             case "Text":
-          alert ("Создаём текстовый слой");  
+          alert ("Создаём текстовый слой"); 
+          createText(); 
             break;
             case "Solid":
-          alert ("Создаём слой со сплошной заливкой");  
+          alert ("Создаём слой со сплошной заливкой");
+          createSolid();  
             break;
             case "Camera":
-          alert ("Создаём камеру");  
-            break;
-            case "Ajustment":
-          alert ("Создаём корректирующий слой");  
+          alert ("Создаём камеру");
+          createCamera();  
             break;
     }  
 }
@@ -57,7 +59,7 @@ function createNull(){
     return
     };
      var newLayer = Comp.layers.addNull();
-     newLayer.name = ("Proba");
+     newLayer.name = ("ProbaN");
 }
 
 function createShape(){
@@ -75,7 +77,7 @@ function createText(){
     return
     };
      var newLayer = Comp.layers.addText("ProbaText");
-     newLayer.name = ("Proba");
+     newLayer.name = ("ProbaT");
 }
 
 function createSolid(){
@@ -83,7 +85,7 @@ function createSolid(){
      if (!Comp){alert("Please select composition")
     return
     };
-     var newLayer = Comp.layers.addSolid([1,1,1],"ProbaS",1920,1080,1);
+     var newLayer = Comp.layers.addSolid([1,0,1],"ProbaS",1920,1080,1);
      
 }
 
@@ -92,15 +94,7 @@ function createCamera(){
      if (!Comp){alert("Please select composition")
     return
     };
-     var newLayer = Comp.layers.addCamera("ProbaCamera",[comp.width/2, comp.height/2]);
-     newLayer.name = ("Proba");
+     var newLayer = Comp.layers.addCamera("ProbaCamera",[Comp.width/2, Comp.height/2]);
+    // newLayer.name = ("ProbaCamera");
 }
 
-function createAjustment(){
-     var Comp= app.project.activeItem;
-     if (!Comp){alert("Please select composition")
-    return
-    };
-     var newLayer = Comp.layers.addAdjustment();
-     newLayer.name = ("Proba");
-}

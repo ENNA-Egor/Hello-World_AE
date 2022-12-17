@@ -9,10 +9,18 @@
     document.querySelector ('.TypeL').addEventListener('change', function(){
       let data = document.querySelector('.TypeL').value;
       //let a = 5;
-         csInterface.evalScript('selType("'+data+'")');
+       //  csInterface.evalScript('selType("'+data+'")');
          document.querySelector('.selectedType').innerHTML = data;
     //  console.log(data);
     });
+
+    document.querySelector ('#btn_test4').addEventListener('click', function(){
+        let data = document.querySelector('.TypeL').value;
+        //let a = 5;
+           csInterface.evalScript('selType("'+data+'")');
+          // document.querySelector('.selectedType').innerHTML = data;
+      //  console.log(data);
+      });
 
     function init() {
                 

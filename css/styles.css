@@ -18,7 +18,7 @@
     color: bisque;
     background-color: blue;
     margin-left:10px;
-    border-radius: 10px;
+    border-radius:5px;
 }
 
 #btn_test2{
@@ -27,7 +27,7 @@
     background-color: blue;
     margin-left:10px;
     margin-top:5px;
-    border-radius: 5px;
+    border-radius:5px;
 }
 
 #btn_test3{
@@ -36,7 +36,16 @@
     background-color: blue;
     margin-left:10px;
     margin-top:5px;
-    border-radius: 3px;
+    border-radius:5px;
+}
+
+#btn_test4{
+  /*  width:150px;*/
+    color: bisque;
+    background-color: blue;
+  /*  margin-left:10px;
+    margin-top:5px;*/
+    border-radius:5px;
 }
 
 #countLayers{
@@ -55,6 +64,7 @@
     background-color: blue;
     color: bisque;
     margin: 5px;
+    border-radius:5px;
 }
 
 
