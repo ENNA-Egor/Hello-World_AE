@@ -50,6 +50,10 @@ function selType(dataN){
           alert ("Создаём камеру");
           createCamera();  
             break;
+            case "Ajustment":
+          alert ("Создаём корректирующий слой");
+          createAjustment();  
+            break;
     }  
 }
 
@@ -98,3 +102,11 @@ function createCamera(){
     // newLayer.name = ("ProbaCamera");
 }
 
+function createAjustment(){
+     var Comp= app.project.activeItem;
+     if (!Comp){alert("Please select composition")
+    return
+    };
+     var newLayer = Comp.layers.addSolid([1,1,1],"ProbaAj",1920,1080,1);
+     newLayer.adjustmentLayer = true;
+}
