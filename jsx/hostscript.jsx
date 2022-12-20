@@ -27,32 +27,32 @@ function countLayers(){
 }
 
 function selType(dataN){
-    alert ("Выбрано  " + dataN);
+  //  alert ("Выбрано  " + dataN);
     var sel = dataN;
     switch (sel) {
         case "Shape":
-          alert ("Создаём шейп"); 
+      //    alert ("Создаём шейп"); 
           createShape(); 
             break;
             case "Null":
-          alert ("Создаём нулевой слой"); 
+       //   alert ("Создаём нулевой слой"); 
           createNull(); 
             break;
             case "Text":
-          alert ("Создаём текстовый слой"); 
+       //   alert ("Создаём текстовый слой"); 
           createText(); 
             break;
             case "Solid":
-          alert ("Создаём слой со сплошной заливкой");
+      //    alert ("Создаём слой со сплошной заливкой");
           createSolid();  
             break;
             case "Camera":
-          alert ("Создаём камеру");
+      //    alert ("Создаём камеру");
           createCamera();  
             break;
-            case "Ajustment":
-          alert ("Создаём корректирующий слой");
-          createAjustment();  
+            case "Adjustment":
+        //  alert ("Создаём корректирующий слой");
+          createAdjustment();  
             break;
     }  
 }
@@ -72,7 +72,7 @@ function createShape(){
     return
     };
      var newLayer = Comp.layers.addShape();
-     newLayer.name = ("Proba");
+     newLayer.name = ("ShapeLayer");
 }
 
 function createText(){
@@ -89,7 +89,7 @@ function createSolid(){
      if (!Comp){alert("Please select composition")
     return
     };
-     var newLayer = Comp.layers.addSolid([1,0,1],"ProbaS",1920,1080,1);
+     var newLayer = Comp.layers.addSolid([(252/252),(222/252),(186/252)],"ProbaS",1920,1080,1);
      
 }
 
@@ -102,11 +102,11 @@ function createCamera(){
     // newLayer.name = ("ProbaCamera");
 }
 
-function createAjustment(){
+function createAdjustment(){
      var Comp= app.project.activeItem;
      if (!Comp){alert("Please select composition")
     return
     };
-     var newLayer = Comp.layers.addSolid([1,1,1],"ProbaAj",1920,1080,1);
+     var newLayer = Comp.layers.addSolid([1,1,1],"AdjustmentLayer",1920,1080,1);
      newLayer.adjustmentLayer = true;
 }
