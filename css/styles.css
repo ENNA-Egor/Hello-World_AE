@@ -58,10 +58,72 @@
     border-radius:5px;
 }
 
+.text-alizarin {
+    color: rgb(253, 113, 78);
+}
+.text-wisteria {
+    color: rgb(164, 118, 236);
+}
+.text-emerland {
+    color: rgb(118, 236, 145);
+}
+.text-sunflower {
+    color: rgb(232, 245, 51);  
+}
+.text-all {
+    color: rgb(246, 247, 231);  
+}
 
 
+nav ul li{
+    display: inline-block;
+    padding: 10px 40px 10px 0;
+    cursor: pointer;
+}
 
+.block-cover {
+}
+.box {
+    border-radius:4px;
+    box-shadow: white 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+    min-height: 140px;
+    min-width: calc(22% - 28px);
+    padding: 0 10px;
+    margin: 15px;
+    border-width: 3px;
+    float: left;
+}
+.box.alizarin {
+    border: 3px solid rgb(253, 113, 78);
+}
+.box.emerland {
+    border: 3px solid  rgb(118, 236, 145);
+}
+.box.wisteria {
+    border: 3px solid rgb(164, 118, 236);
+}
+.box.sunflower {
+    border: 3px solid rgb(232, 245, 51);
+}
 
+.hide{
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+    to{
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    
+}
 
 
 
